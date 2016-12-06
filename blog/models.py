@@ -7,6 +7,8 @@ class Post(models.Model):
     author = models.CharField(max_length =100)
     title = models.CharField(max_length =200)
     text = models.TextField()
+    tag=models.TextField(default=None)
+    
     
     
     def publish(self):
